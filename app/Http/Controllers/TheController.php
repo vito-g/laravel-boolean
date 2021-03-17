@@ -10,6 +10,6 @@ class TheController extends Controller
     public function index() {
       $cars = Car::all();
       dump($cars);
-      return view('list');
+      return view('list', ['cars' => $cars]);
     }
 }
