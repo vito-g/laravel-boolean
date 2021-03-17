@@ -1,3 +1,4 @@
 @foreach ($cars as $key => $car)
-  {{$car}}
+  {{$car->model}}
+  {{$car->typology}} <br>
 @endforeach

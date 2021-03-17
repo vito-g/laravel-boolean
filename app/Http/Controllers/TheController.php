@@ -9,7 +9,7 @@ class TheController extends Controller
 {
     public function index() {
       $cars = Car::all();
-      dump($cars);
+      // dump($cars);
       return view('list', ['cars' => $cars]);
     }
 }
